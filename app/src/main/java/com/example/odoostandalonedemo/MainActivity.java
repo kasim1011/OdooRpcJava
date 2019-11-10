@@ -58,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
         super.onPostCreate(savedInstanceState);
         apis = createRetrofit();
 
-        if (isLogin()) {
+        boolean isLogin = isLogin();
+        Timber.d("isLogin is %s", isLogin);
+        if (isLogin) {
             searchRead();
         } else {
             authenticate();
