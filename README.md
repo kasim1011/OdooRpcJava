@@ -9,6 +9,8 @@ Requirements
 
 - Android Studio 3.5.2 or higher
 
+How to run
+
 1. Update the following fields in `MainActivity.java`
 
 ```java
